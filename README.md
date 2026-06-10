@@ -6,7 +6,7 @@
 
 ---
 
-*Seguramente estas de acuerdo conmigo en que no hay precio para la tranquilidad de seber que tu familia y tu patrimonio están seguros. La mayoría de la gente piensa en poner cámaras despues de que ya les pasó algo, pero la clave está en prevenir, Con nuestro sistema, no solo grabaslo que pasa, sino que puedes ver tu casa en tiempo real desde tu celular, estés donde estés, y recibir alertas inmediatas si algo anda mal. Déjame mostrarte cómo proteger lo que más quieres sin complicaciones.*
+*Seguramente estas de acuerdo conmigo en que no hay precio para la tranquilidad de seber que tu familia y tu patrimonio están seguros. La mayoría de la gente piensa en poner cámaras despues de que ya les pasó algo, pero la clave está en prevenir, Con nuestro sistema, no solo grabas lo que pasa, sino que puedes ver tu casa en tiempo real desde tu celular, estés donde estés, y recibir alertas inmediatas si algo anda mal. Déjame mostrarte cómo proteger lo que más quieres sin complicaciones.*
 
 ---
 
