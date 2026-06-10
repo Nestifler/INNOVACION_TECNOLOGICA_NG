@@ -1,6 +1,6 @@
-# INNOVACION_TECNOLOGICA_NG 🚀
+# INNOVACION_TECNOLOGICA_NG
 
-<img src="targeta.png" alt="Logo Innovación Tecnológica NG" width="400"/>
+<img src="tarjeta.png" alt="Logo Innovación Tecnológica NG" width="400"/>
 
 *Soluciones profesionales en seguridad y tecnología*
 
