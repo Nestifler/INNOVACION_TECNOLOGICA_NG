@@ -1,4 +1,4 @@
-# INNOVACION_TECNOLOGICA_NG
+# INNOVACION TECNOLOGICA NG
 
 <img src="tarjeta.png" alt="Logo Innovación Tecnológica NG" width="400"/>
 
@@ -110,5 +110,7 @@ document.onkeydown = function(e) {
   if(e.keyCode === 123) return false;
 };
 </script>
+
+<a href="catalogo.html" target="_blank" rel="noopener noreferrer">Ver catálogo</a>
 
 # Puedes contactar por medio de WhatsApp al [+57 322 802 2560](https://wa.me/573228022560) Haces tu pedido y pagas contra-entrega.
