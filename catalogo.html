@@ -209,7 +209,7 @@
             if (indiceActual >= totalImagenes) indiceActual = 0;
             
             carrusel.dataset.indice = indiceActual;
-            carrusel.style.transform = translateX(-${indiceActual * 100}%);
+            carrusel.style.transform = `translateX(-${indiceActual * 100}%)`;
         }
 
         // Lógica para calificación con estrellas
@@ -228,7 +228,7 @@
                                 e.classList.add('fa-star-o');
                             }
                         });
-                        alert(¡Gracias por calificar con ${valor} estrellas!);
+                        alert(`¡Gracias por calificar con ${valor} estrellas!`);
                     });
                 });
             });
