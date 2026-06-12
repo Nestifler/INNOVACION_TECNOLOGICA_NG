@@ -24,9 +24,6 @@
     </script>
     <style type="text/tailwindcss">
         @layer utilities {
-            .content-auto {
-                content-visibility: auto;
-            }
             .scroll-text {
                 max-height: 120px;
                 overflow-y: auto;
@@ -47,20 +44,27 @@
             .card-shadow {
                 box-shadow: 0 4px 20px rgba(0,0,0,0.08);
             }
+            .banner-full {
+                width: 100vw;
+                margin-left: calc(-50vw + 50%);
+                max-height: 300px;
+                object-fit: cover;
+            }
         }
     </style>
 </head>
 <body class="bg-slate-50 text-dark font-sans">
 
-    <!-- 🎯 ENCABEZADO CON IMAGEN -->
-    <header class="bg-white py-8 border-b border-slate-200">
-        <div class="container mx-auto px-4 text-center">
-            <img 
-                src="BANNER.png" 
-                alt="Innovación Tecnológica NG" 
-                class="mx-auto h-28 md:h-36 object-contain mb-4"
-            >
-            <h1 class="text-3xl md:text-4xl font-bold text-primary mb-2">Soluciones en seguridad y tecnología para hogares y empresas</h1>
+    <!-- 🎯 BANNER A ANCHO COMPLETO -->
+    <header class="w-full overflow-hidden">
+        <img 
+            src="BANNER.png" 
+            alt="Innovación Tecnológica NG" 
+            class="banner-full w-full h-auto"
+        >
+        <div class="text-center py-6 px-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-primary mb-2">Catálogo de Productos</h1>
+            <p class="text-slate-600 max-w-2xl mx-auto">Soluciones en seguridad y tecnología para hogares y empresas</p>
         </div>
     </header>
 
@@ -68,7 +72,7 @@
 
         <!-- 📁 CATEGORÍA 1: Cámaras Inalámbricas / WiFi -->
         <section class="mb-16">
-            <div class="mb-8 pb-3 border-b-2 border-primary inline-block">
+            <div class="mb-8 pb-3 border-b-2 border-primary inline-block w-full">
                 <h2 class="text-2xl md:text-3xl font-bold text-dark flex items-center gap-2">
                     <i class="fa fa-wifi text-primary"></i> Cámaras Inalámbricas / WiFi
                 </h2>
@@ -79,19 +83,33 @@
 
             <!-- 🛒 PRODUCTO 1: Tapo C410 -->
             <div class="bg-white rounded-xl p-6 card-shadow max-w-sm mx-auto">
-                <!-- Carrusel de imágenes -->
+                <!-- Carrusel de imágenes FUNCIONAL -->
                 <div class="relative h-64 bg-slate-100 rounded-lg overflow-hidden mb-4">
-                    <div class="carousel-slide w-full h-full flex transition-transform duration-300 ease-in-out" id="carrusel-c410">
+                    <div 
+                        class="w-full h-full flex transition-transform duration-300 ease-in-out" 
+                        id="carrusel-c410"
+                        data-indice="0"
+                    >
                         <img src="TAPOC410_1.png" alt="Tapo C410 - Vista 1" class="w-full h-full object-contain flex-shrink-0">
                         <img src="TAPOC410_2.png" alt="Tapo C410 - Vista 2" class="w-full h-full object-contain flex-shrink-0">
                         <img src="TAPOC410_3.png" alt="Tapo C410 - Vista 3" class="w-full h-full object-contain flex-shrink-0">
                         <img src="TAPOC410_4.png" alt="Tapo C410 - Vista 4" class="w-full h-full object-contain flex-shrink-0">
                         <img src="TAPOC410_5.png" alt="Tapo C410 - Vista 5" class="w-full h-full object-contain flex-shrink-0">
                     </div>
-                    <button onclick="moverCarrusel('carrusel-c410', -1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 rounded-full w-9 h-9 flex items-center justify-center shadow hover:bg-white transition transition z-10">
+                    <!-- Botón anterior -->
+                    <button 
+                        type="button"
+                        onclick="moverCarrusel('carrusel-c410', -1)" 
+                        class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 rounded-full w-9 h-9 flex items-center justify-center shadow hover:bg-white transition z-20"
+                    >
                         <i class="fa fa-chevron-left"></i>
                     </button>
-                    <button onclick="moverCarrusel('carrusel-c410', 1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 rounded-full w-9 h-9 flex items-center justify-center shadow hover:bg-white transition z-10">
+                    <!-- Botón siguiente -->
+                    <button 
+                        type="button"
+                        onclick="moverCarrusel('carrusel-c410', 1)" 
+                        class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 rounded-full w-9 h-9 flex items-center justify-center shadow hover:bg-white transition z-20"
+                    >
                         <i class="fa fa-chevron-right"></i>
                     </button>
                 </div>
@@ -111,7 +129,7 @@
 
                 <!-- Botón WhatsApp -->
                 <a 
-                    href="https://wa.me/573228022560?text=¡Quiero comprar este artículo!%0A%0AProducto:%20Tapo%20C410%20-%20Cámara%20Inalámbrica%202K%0APrecio:%20$440.000%20COP%0AImagen:%20https://nestifier.github.io/INNOVACION_TECNOLOGICA_NG/TAPOC410_1.pNg"
+                    href="https://wa.me/573228022560?text=¡Quiero comprar este artículo!%0A%0AProducto:%20Tapo%20C410%20-%20Cámara%20Inalámbrica%202K%0APrecio:%20$440.000%20COP%0AImagen:%20https://nestifier.github.io/INNOVACION_TECNOLOGICA_NG/TAPOC410_1.png"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="block w-full bg-green-600 hover:bg-green-700 text-white text-center py-2.5 rounded-lg font-medium transition mb-4"
@@ -136,7 +154,7 @@
 
         <!-- 📁 CATEGORÍA 2: Cámaras Analógicas -->
         <section class="mb-16">
-            <div class="mb-8 pb-3 border-b-2 border-primary inline-block">
+            <div class="mb-8 pb-3 border-b-2 border-primary inline-block w-full">
                 <h2 class="text-2xl md:text-3xl font-bold text-dark flex items-center gap-2">
                     <i class="fa fa-video-camera text-primary"></i> Cámaras Analógicas
                 </h2>
@@ -145,7 +163,6 @@
                 </p>
             </div>
 
-            <!-- Aquí agregas tus productos de esta categoría con la misma estructura -->
             <div class="text-center p-8 bg-slate-50 rounded-xl border border-dashed border-slate-300">
                 <p class="text-slate-500">Próximamente más modelos disponibles</p>
             </div>
@@ -154,7 +171,7 @@
 
         <!-- 📁 CATEGORÍA 3: Cámaras IP -->
         <section>
-            <div class="mb-8 pb-3 border-b-2 border-primary inline-block">
+            <div class="mb-8 pb-3 border-b-2 border-primary inline-block w-full">
                 <h2 class="text-2xl md:text-3xl font-bold text-dark flex items-center gap-2">
                     <i class="fa fa-globe text-primary"></i> Cámaras IP
                 </h2>
@@ -163,7 +180,6 @@
                 </p>
             </div>
 
-            <!-- Aquí agregas tus productos de esta categoría -->
             <div class="text-center p-8 bg-slate-50 rounded-xl border border-dashed border-slate-300">
                 <p class="text-slate-500">Próximamente más modelos disponibles</p>
             </div>
@@ -180,35 +196,44 @@
 
     <!-- ⚙️ SCRIPTS FUNCIONALES -->
     <script>
-// Función para mover el carrusel
-function moverCarrusel(id, direccion) {
-    const carrusel = document.getElementById(id);
-    const totalImagenes = carrusel.children.length;
-    let indiceActual = parseInt(carrusel.dataset.indice || 0);
-    
-    indiceActual += direccion;
-    if (indiceActual < 0) indiceActual = totalImagenes - 1;
-    if (indiceActual >= totalImagenes) indiceActual = 0;
-    
-    carrusel.dataset.indice = indiceActual;
-    carrusel.style.transform = translateX(-${indiceActual * 100}%);
-}
+        // Función corregida para mover el carrusel
+        function moverCarrusel(id, direccion) {
+            const carrusel = document.getElementById(id);
+            if (!carrusel) return;
 
-// Calificación con estrellas
-document.querySelectorAll('[id^="estrellas-"]').forEach(contenedor => {
-    const estrellas = contenedor.querySelectorAll('i');
-    estrellas.forEach(estrella => {
-        estrella.addEventListener('click', () => {
-            const valor = parseInt(estrella.dataset.valor);
-            estrellas.forEach((e, idx) => {
-                e.classList.toggle('fa-star', idx < valor);
-                e.classList.toggle('fa-star-o', idx >= valor);
+            const totalImagenes = carrusel.children.length;
+            let indiceActual = parseInt(carrusel.dataset.indice || 0);
+            
+            indiceActual += direccion;
+            if (indiceActual < 0) indiceActual = totalImagenes - 1;
+            if (indiceActual >= totalImagenes) indiceActual = 0;
+            
+            carrusel.dataset.indice = indiceActual;
+            carrusel.style.transform = translateX(-${indiceActual * 100}%);
+        }
+
+        // Lógica para calificación con estrellas
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('[id^="estrellas-"]').forEach(contenedor => {
+                const estrellas = contenedor.querySelectorAll('i');
+                estrellas.forEach(estrella => {
+                    estrella.addEventListener('click', () => {
+                        const valor = parseInt(estrella.dataset.valor);
+                        estrellas.forEach((e, idx) => {
+                            if (idx < valor) {
+                                e.classList.remove('fa-star-o');
+                                e.classList.add('fa-star');
+                            } else {
+                                e.classList.remove('fa-star');
+                                e.classList.add('fa-star-o');
+                            }
+                        });
+                        alert(¡Gracias por calificar con ${valor} estrellas!);
+                    });
+                });
             });
-            alert(¡Gracias por calificar con ${valor} estrellas!);
         });
-    });
-});
-</script>
+    </script>
 
 </body>
 </html>
