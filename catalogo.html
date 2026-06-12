@@ -149,6 +149,76 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 🛒 PRODUCTO 2: Tapo C200 -->
+            <div class="bg-white rounded-xl p-6 card-shadow max-w-sm mx-auto">
+                <!-- Carrusel de imágenes FUNCIONAL -->
+                <div class="relative h-64 bg-slate-100 rounded-lg overflow-hidden mb-4">
+                    <div 
+                        class="w-full h-full flex transition-transform duration-300 ease-in-out" 
+                        id="carrusel-c200"
+                        data-indice="0"
+                    >
+                        <img src="TAPOC200_1.png" alt="Tapo C200 - Vista 1" class="w-full h-full object-contain flex-shrink-0">
+                        <img src="TAPOC200_2.png" alt="Tapo C200 - Vista 2" class="w-full h-full object-contain flex-shrink-0">
+                        <img src="TAPOC200_3.png" alt="Tapo C200 - Vista 3" class="w-full h-full object-contain flex-shrink-0">
+                        <img src="TAPOC200_4.png" alt="Tapo C200 - Vista 4" class="w-full h-full object-contain flex-shrink-0">
+                        <img src="TAPOC200_5.png" alt="Tapo C200 - Vista 5" class="w-full h-full object-contain flex-shrink-0">
+                    </div>
+                    <!-- Botón anterior -->
+                    <button 
+                        type="button"
+                        onclick="moverCarrusel('carrusel-c410', -1)" 
+                        class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 rounded-full w-9 h-9 flex items-center justify-center shadow hover:bg-white transition z-20"
+                    >
+                        <i class="fa fa-chevron-left"></i>
+                    </button>
+                    <!-- Botón siguiente -->
+                    <button 
+                        type="button"
+                        onclick="moverCarrusel('carrusel-C200', 1)" 
+                        class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 rounded-full w-9 h-9 flex items-center justify-center shadow hover:bg-white transition z-20"
+                    >
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Precio -->
+                <div class="bg-gradient-to-r from-primary to-blue-600 text-white text-center py-3 rounded-lg font-bold text-xl mb-4">
+                    $130.000 COP
+                </div>
+
+                <!-- Descripción con scroll -->
+                <div class="scroll-text text-slate-700 text-sm mb-4">
+                    <h4 class="font-semibold mb-1">Tapo C200 - Cámara WiFi Interior</h4>
+                    <p>
+                        Cámara de seguridad giratoria 360°, resolución 1080p Full HD, visión nocturna infrarroja, detección de movimiento, audio bidireccional y grabación en tarjeta MicroSD. Ideal para monitorear interiores, niños o mascotas desde tu celular en cualquier momento.
+                    </p>
+                </div>
+
+                <!-- Botón WhatsApp -->
+                <a 
+                    href="https://wa.me/573228022560?text=¡Quiero comprar este artículo!%0A%0AProducto:%20Tapo%20C410%20-%20Cámara%20Inalámbrica%202K%0APrecio:%20$440.000%20COP%0AImagen:%20https://nestifier.github.io/INNOVACION_TECNOLOGICA_NG/TAPOC200_1.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="block w-full bg-green-600 hover:bg-green-700 text-white text-center py-2.5 rounded-lg font-medium transition mb-4"
+                >
+                    <i class="fa fa-whatsapp mr-2"></i> Consultar / Comprar
+                </a>
+
+                <!-- Calificación -->
+                <div class="text-center">
+                    <p class="text-sm text-slate-500 mb-1">Califica este producto:</p>
+                    <div class="text-amber-400 text-xl" id="estrellas-c200">
+                        <i class="fa fa-star-o cursor-pointer hover:text-amber-500" data-valor="1"></i>
+                        <i class="fa fa-star-o cursor-pointer hover:text-amber-500" data-valor="2"></i>
+                        <i class="fa fa-star-o cursor-pointer hover:text-amber-500" data-valor="3"></i>
+                        <i class="fa fa-star-o cursor-pointer hover:text-amber-500" data-valor="4"></i>
+                        <i class="fa fa-star-o cursor-pointer hover:text-amber-500" data-valor="5"></i>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
 
