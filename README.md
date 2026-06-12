@@ -109,6 +109,6 @@ document.onkeydown = function(e) {
 };
 </script>
 
-<a href="catalogo.html" target="_blank" rel="noopener noreferrer">para ver catálogo, haga click aquí...</a>
+<a href="catalogo.html" target="_blank" rel="noopener noreferrer">Para ver catálogo, haga click aquí...</a>
 
 # Puedes contactar por medio de WhatsApp al [+57 322 802 2560](https://wa.me/573228022560) Haces tu pedido y pagas contra-entrega.
