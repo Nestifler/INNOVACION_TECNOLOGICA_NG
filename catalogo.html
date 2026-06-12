@@ -180,40 +180,35 @@
 
     <!-- ⚙️ SCRIPTS FUNCIONALES -->
     <script>
-        // Lógica para carruseles de imágenes
-        function moverCarrusel(id, direccion) {
-            const carrusel = document.getElementById(id);
-            const totalImagenes = carrusel.children.length;
-            let indiceActual = parseInt(carrusel.dataset.indice || 0);
-            
-            indiceActual += direccion;
-            if (indiceActual < 0) indiceActual = totalImagenes - 1;
-            if (indiceActual >= totalImagenes) indiceActual = 0;
-            
-            carrusel.dataset.indice = indiceActual;
-            carrusel.style.transform = translateX(-${indiceActual * 100}%);
-        }
+// Función para mover el carrusel
+function moverCarrusel(id, direccion) {
+    const carrusel = document.getElementById(id);
+    const totalImagenes = carrusel.children.length;
+    let indiceActual = parseInt(carrusel.dataset.indice || 0);
+    
+    indiceActual += direccion;
+    if (indiceActual < 0) indiceActual = totalImagenes - 1;
+    if (indiceActual >= totalImagenes) indiceActual = 0;
+    
+    carrusel.dataset.indice = indiceActual;
+    carrusel.style.transform = translateX(-${indiceActual * 100}%);
+}
 
-        // Lógica para calificación con estrellas
-        document.querySelectorAll('[id^="estrellas-"]').forEach(contenedor => {
-            const estrellas = contenedor.querySelectorAll('i');
-            estrellas.forEach(estrella => {
-                estrella.addEventListener('click', () => {
-                    const valor = parseInt(estrella.dataset.valor);
-                    estrellas.forEach((e, idx) => {
-                        if (idx < valor) {
-                            e.classList.remove('fa-star-o');
-                            e.classList.add('fa-star');
-                        } else {
-                            e.classList.remove('fa-star');
-                            e.classList.add('fa-star-o');
-                        }
-                    });
-                    alert(¡Gracias por calificar con ${valor} estrellas!);
-                });
+// Calificación con estrellas
+document.querySelectorAll('[id^="estrellas-"]').forEach(contenedor => {
+    const estrellas = contenedor.querySelectorAll('i');
+    estrellas.forEach(estrella => {
+        estrella.addEventListener('click', () => {
+            const valor = parseInt(estrella.dataset.valor);
+            estrellas.forEach((e, idx) => {
+                e.classList.toggle('fa-star', idx < valor);
+                e.classList.toggle('fa-star-o', idx >= valor);
             });
+            alert(¡Gracias por calificar con ${valor} estrellas!);
         });
-    </script>
+    });
+});
+</script>
 
 </body>
 </html>
