@@ -1,5 +1,3 @@
-# INNOVACION TECNOLOGICA NG
-
 <img src="tarjeta.png" alt="Logo Innovación Tecnológica NG" width="400"/>
 
 *Soluciones profesionales en seguridad y tecnología*
