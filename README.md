@@ -1,5 +1,7 @@
 <img src="tarjeta.png" alt="Logo Innovación Tecnológica NG" width="400"/>
 
+<a href="catalogo.html" target="_blank" rel="noopener noreferrer">Para ver catálogo, haga click aquí...</a>
+
 *Soluciones profesionales en seguridad y tecnología*
 
 ---
