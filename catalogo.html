@@ -357,72 +357,12 @@
                 class="banner-full w-full h-auto"
             >
 
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                <!-- 🛒 PRODUCTO 1: Netflix cuenta completa-->
-                <div class="bg-white rounded-xl p-6 card-shadow w-full mx-auto">
-                    <!-- Carrusel de imágenes FUNCIONAL -->
-                <div class="relative h-64 bg-slate-100 rounded-lg overflow-hidden mb-4">
-                    <div 
-                        class="w-full h-full flex transition-transform duration-300 ease-in-out" 
-                        id="carrusel-netflix"
-                        data-indice="0"
-                    >
-                        <img src="NETFLIXCOMPLETA1.png" alt="Netflix cuenta completa - Vista 1" class="w-full h-full object-contain flex-shrink-0">
-                        <img src="NETFILXCOMPLETA2.png" alt="Netflix cuenta completa - Vista 2" class="w-full h-full object-contain flex-shrink-0">
-                    </div>
-                    <!-- Botón anterior -->
-                    <button 
-                        type="button"
-                        onclick="moverCarrusel('carrusel-netflix', -1)" 
-                        class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 rounded-full w-9 h-9 flex items-center justify-center shadow hover:bg-white transition z-20"
-                    >
-                        <i class="fa fa-chevron-left"></i>
-                    </button>
-                    <!-- Botón siguiente -->
-                    <button 
-                        type="button"
-                        onclick="moverCarrusel('carrusel-netflix', 1)" 
-                        class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 rounded-full w-9 h-9 flex items-center justify-center shadow hover:bg-white transition z-20"
-                    >
-                        <i class="fa fa-chevron-right"></i>
-                    </button>
-                </div>
-
-                <!-- Precio -->
-                <div class="bg-gradient-to-r from-primary to-blue-600 text-white text-center py-3 rounded-lg font-bold text-xl mb-4">
-                    $44.000 COP
-                </div>
-
-                <!-- Descripción con scroll -->
-                <div class="scroll-text text-slate-700 text-sm mb-4">
-                    <h4 class="font-semibold mb-1">Netflix cuenta completa - 5 Perfiles</h4>
-                    <p>
-                        Netflix ofrece entretenimiento ilimitado, contenido original exclusivo, visualización sin anuncios y acceso flexible desde múltiples dispositivos.
-                    </p>
-                </div>
-
-                <!-- Botón WhatsApp -->
-                <a 
-                    href="https://wa.me/573228022560?text=¡Quiero comprar mi cuenta completa!%0A%0AProducto:%20Netflix%20-%20cuenta%20-%20completa%0APrecio:%20$44.000%20COP%0AImagen:%20https://n[...]
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="block w-full bg-green-600 hover:bg-green-700 text-white text-center py-2.5 rounded-lg font-medium transition mb-4"
+            <div class="max-w-4xl mx-auto">
+                <img 
+                    src="NETFLIXCOMPLETA.png"
+                    alt="Netflix cuenta completa" 
+                    class="w-full h-auto rounded-xl shadow-lg object-contain"
                 >
-                    <i class="fa fa-whatsapp mr-2"></i> Consultar / Comprar
-                </a>
-
-                <!-- Calificación -->
-                <div class="text-center">
-                    <p class="text-sm text-slate-500 mb-1">Califica este producto:</p>
-                    <div class="text-amber-400 text-xl" id="estrellas-netflix">
-                        <i class="fa fa-star-o cursor-pointer hover:text-amber-500" data-valor="1"></i>
-                        <i class="fa fa-star-o cursor-pointer hover:text-amber-500" data-valor="2"></i>
-                        <i class="fa fa-star-o cursor-pointer hover:text-amber-500" data-valor="3"></i>
-                        <i class="fa fa-star-o cursor-pointer hover:text-amber-500" data-valor="4"></i>
-                        <i class="fa fa-star-o cursor-pointer hover:text-amber-500" data-valor="5"></i>
-                    </div>
-                </div>
-                </div>
             </div>
         </section>
 
