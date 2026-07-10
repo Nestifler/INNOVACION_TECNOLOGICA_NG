@@ -110,4 +110,4 @@ document.onkeydown = function(e) {
 
 <a href="catalogo.html" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 14px 30px; background-color: #165DFF; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background-color 0.3s ease;">Para ver catálogo, haga click aquí...</a>
 
-# Puedes contactar por medio de WhatsApp al [+57 322 802 2560](https://wa.me/573228022560) Haces tu pedido ahora.
+# Puedes contactar por medio de WhatsApp al [+57 322 802 2560](https://wa.me/573228022560) Haz tu pedido ahora.
