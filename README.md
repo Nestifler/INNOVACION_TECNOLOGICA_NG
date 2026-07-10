@@ -1,6 +1,6 @@
 <img src="tarjeta.png" alt="Logo Innovación Tecnológica NG" width="400"/>
 
-<a href="catalogo.html" target="_blank" rel="noopener noreferrer">Para ver catálogo, haga click aquí...</a>
+<a href="catalogo.html" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 14px 30px; background-color: #165DFF; color: white; text-decoration: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background-color 0.3s ease;">Para ver catálogo, haga click aquí...</a>
 
 *Soluciones profesionales en seguridad y tecnología*
 
